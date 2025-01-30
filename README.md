@@ -1,7 +1,7 @@
 # Catalan Spray and Wait Routing Protocol
 
 ## 📌 Overview
-This project implements the **Catalan-based Spray and Wait (SnW) Routing Protocol** for **Delay Tolerant Networks (DTNs)**. It is an improved version of the **Binary SnW** protocol, optimized for **intermittently connected mobile networks**. 
+This project implements the **Catalan-based Spray and Wait (SnW) Routing Protocol** for **Delay Tolerant Networks (DTNs)**. It is an improved version of the **Binary SnW** protocol, optimized for **intermittently connected mobile networks**.
 
 🔹 **Key Highlights:**
 - Implements **Spray and Wait** routing using the **Catalan number sequence**.
@@ -36,11 +36,59 @@ This project implements the **Catalan-based Spray and Wait (SnW) Routing Protoco
 
 ## 🚀 Setup & Execution
 
-### 🔧 **Prerequisites**
+### ⚖️ **Prerequisites**
 - **Java Development Kit (JDK)**
 - **ONE Simulator** (Opportunistic Network Environment)
 
-### 📌 **Steps to Run**
+### 📈 **Steps to Run**
 1. **Compile the Java Code**:
    ```sh
    javac catalan.java
+   ```
+2. **Run the Simulation**:
+   - Configure **`default_settings.txt`** as required.
+   - Run the **ONE Simulator** to observe **Catalan routing behavior**.
+
+---
+
+## 📊 Performance Evaluation
+### **Evaluation Metrics**
+📌 **Delivery Ratio** - Measures the percentage of successfully delivered messages.  
+📌 **Overhead Ratio** - Represents redundant message copies compared to delivered messages.  
+📌 **Mean Delay** - Average time taken for message delivery.  
+📌 **Average Hop Count** - Number of intermediate nodes the message passes through.  
+
+### **Performance Comparison**
+| Number of Copies | Wait Phase Level (Binary SnW) | Wait Phase Level (Catalan SnW) |
+|-----------------|-----------------------------|-----------------------------|
+| **6**  | 2 | **1** |
+| **8**  | 3 | **2** |
+| **10** | 3 | **3** |
+| **12** | 3 | **3** |
+| **14** | 3 | **3** |
+| **16** | 4 | **2** |
+| **32** | 5 | **4** |
+
+🔹 **Catalan SnW outperforms Binary SnW** by reaching the wait phase **faster**, reducing overhead, and improving efficiency.
+
+---
+
+## 📚 References
+- **Mushtaq Ahmed, Amit Yadav** - "An Improved Delay Tolerant Routing Protocol for Opportunistic Networks".
+- Research on **Spray and Wait Routing Protocols** in DTNs.
+
+---
+
+## 📝 License
+This project follows the **GPLv3 License** as stated in the source code.
+
+---
+
+## 🤝 Contributing
+Want to improve the routing algorithm or enhance the simulation?  
+📩 Feel free to open **issues** or submit **pull requests**!  
+
+---
+
+💡 **Happy Coding! 🚀**
+
