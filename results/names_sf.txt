@@ -1,0 +1,3 @@
+Bin - binary
+pen - Penatgonal Snw
+Hex - Hexago Snw
